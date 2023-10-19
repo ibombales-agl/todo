@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: todo
+  name: todo-app
   labels:
     app: todo
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo
-        image: datawire/todo:latest
+        image: ibombales-agl/todo:latest
         ports:
         - containerPort: 8080
